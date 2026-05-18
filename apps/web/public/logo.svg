@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 80" fill="none" role="img" aria-label="Garden Smile">
+  <!-- Mark: stylised garden with a smile under leaves -->
+  <g transform="translate(8 8)">
+    <!-- smile arc -->
+    <path d="M12 38c10 14 30 14 40 0" stroke="#2f7d3a" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <!-- leaves growing from smile -->
+    <path d="M24 22c-4-6-2-12 4-14 1 6-1 12-4 14z" fill="#3f9d4a"/>
+    <path d="M40 22c4-6 2-12-4-14-1 6 1 12 4 14z" fill="#3f9d4a"/>
+    <path d="M32 18c0-8 4-14 0-18-4 4 0 10 0 18z" fill="#5cb55f"/>
+    <!-- ground hint -->
+    <line x1="6" y1="50" x2="58" y2="50" stroke="#8b6f47" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <!-- Wordmark -->
+  <text x="80" y="38" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="22" fill="#1f3d22">Garden</text>
+  <text x="80" y="60" font-family="Georgia, 'Times New Roman', serif" font-weight="400" font-size="22" fill="#3f9d4a" font-style="italic">Smile</text>
+</svg>

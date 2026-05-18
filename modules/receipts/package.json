@@ -1,0 +1,25 @@
+{
+  "name": "@demicommerce/module-receipts",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./helpers": "./src/helpers.ts",
+    "./templates": "./src/templates/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@demicommerce/core": "workspace:*",
+    "payload": "^3.0.0",
+    "pdfkit": "^0.15.0"
+  },
+  "devDependencies": {
+    "@demicommerce/typescript-config": "workspace:*",
+    "@types/pdfkit": "^0.13.4",
+    "typescript": "^5.7.0"
+  }
+}

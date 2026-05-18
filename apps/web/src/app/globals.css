@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Warm-brown brand palette (gs-leaf-* names kept for backward compat,
+     but values are now in the brown family — handcrafted wood / cedar look). */
+  --gs-leaf: 138 98 64;          /* primary brown   #8a6240 */
+  --gs-leaf-light: 194 150 108;  /* light tan       #c2966c */
+  --gs-leaf-deep: 60 40 24;      /* dark roast      #3c2818 */
+  --gs-bark: 139 111 71;         /* warm brown      #8b6f47 */
+  --gs-cream: 250 246 238;       /* paper           #faf6ee */
+  --gs-stone: 90 84 73;          /* body text       #5a5449 */
+  --gs-blush: 224 198 144;       /* soft accent     #e0c690 */
+}
+
+html {
+  background-color: rgb(var(--gs-cream));
+  color: rgb(var(--gs-stone));
+}
+
+html,
+body {
+  /* Drawer slides off-screen via translate-x-full and would otherwise
+     introduce horizontal scroll. */
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  .font-serif {
+    font-family: 'Fraunces', Georgia, 'Times New Roman', serif;
+    color: rgb(var(--gs-leaf-deep));
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@keyframes gs-marquee {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.gs-marquee-track {
+  animation: gs-marquee var(--gs-marquee-duration, 90s) linear infinite;
+  will-change: transform;
+}
+
+.gs-marquee-wrapper:hover .gs-marquee-track,
+.gs-marquee-wrapper:focus-within .gs-marquee-track {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gs-marquee-track {
+    animation: none;
+  }
+}

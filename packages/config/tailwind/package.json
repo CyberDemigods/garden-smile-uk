@@ -1,0 +1,10 @@
+{
+  "name": "@demicommerce/tailwind-config",
+  "version": "0.1.0",
+  "private": true,
+  "main": "tailwind.config.ts",
+  "files": ["tailwind.config.ts"],
+  "devDependencies": {
+    "tailwindcss": "^3.4.0"
+  }
+}

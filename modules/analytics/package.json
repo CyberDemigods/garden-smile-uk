@@ -1,0 +1,29 @@
+{
+  "name": "@demicommerce/module-analytics",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./src/components/*": "./src/components/*"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@demicommerce/core": "workspace:*",
+    "payload": "^3.0.0"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0",
+    "next": ">=15.0.0"
+  },
+  "devDependencies": {
+    "@demicommerce/typescript-config": "workspace:*",
+    "@types/react": "^19.0.0",
+    "next": "^15.0.0",
+    "react": "^19.0.0",
+    "typescript": "^5.7.0"
+  }
+}
